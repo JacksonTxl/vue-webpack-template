@@ -14,7 +14,7 @@
 ## Get Started
 
 ```bash
-$ vue init jikkai/vue-webpack-template project-develop
+$ vue init JacksonTxl/vue-webpack-template project-develop
 $ cd project-develop
 $ npm i
 
