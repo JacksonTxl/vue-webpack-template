@@ -9,6 +9,7 @@ const config = require('../config/config')
 
 base.entry.vendor = config.vendor
 base.output.filename = 'js/[name].[chunkhash:8].js'
+base.output.publicPath = '../'
 base.stats = { children: false }
 
 // Plugins Configuration

@@ -6,7 +6,7 @@
 </template>
 
 <script>
-  import Hello from '~components/Hello';
+  import Hello from '~packages/Hello';
   {{#if_eq theme 'element-ui'}}
   import { Button, Message } from 'element-ui';
   {{else}}
@@ -27,7 +27,6 @@
           iconClass: 'icon icon-success'
         })
         {{/if_eq}}
-          console.log(111);
       }
     }
   }
