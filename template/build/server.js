@@ -3,8 +3,8 @@ const path = require('path');
 const express = require('express');
 const webpack = require('webpack');
 var proxy = require('http-proxy-middleware');
-const webpackConfig = require('./webpack.dev');
-const config = require('./config');
+const webpackConfig = require('../config/webpack.dev');
+const config = require('../config/config');
 
 const app = express();
 

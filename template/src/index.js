@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueResource from 'vue-resource';
 import router from './router';
+import App from './App';
 import './style/main.css';
 
 Vue.use(VueResource);

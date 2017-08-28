@@ -4,7 +4,7 @@ const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 
-const base = require('./webpack.base')
+const base = require('../config/webpack.base')
 const config = require('../config/config')
 
 base.entry.vendor = config.vendor

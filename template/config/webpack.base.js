@@ -3,7 +3,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const config = require('../config/config');
+const config = require('./config');
 
 module.exports = {
   entry: {
@@ -57,7 +57,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: config.title,
-      template: __dirname + '../config/index.html',
+      template: __dirname + '/index.html',
       filename: './index.html'
     })
   ]
