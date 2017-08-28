@@ -5,6 +5,7 @@ const webpack = require('webpack');
 var proxy = require('http-proxy-middleware');
 const webpackConfig = require('../config/webpack.dev');
 const config = require('../config/config');
+const childProcess = require('child_process');
 
 const app = express();
 
@@ -45,4 +46,10 @@ app.use('/api/test', proxy('/api/test', {
 }));
 app.listen(config.port, () => {
   console.log(`Listening at http://localhost:${config.port}`)
+  var url = 'http://localhost:' + config.port ;
+  if (/^win/.test(process.platform)){
+    childProcess.exec('start ' + url);
+  }else{
+    childProcess.exec('open ' + url);
+  }
 });
