@@ -22,9 +22,9 @@
     methods: {
       hello () {
         {{#if_eq theme 'element-ui'}}
-          Message('Hello Vue')；
+        Message('Hello Vue')；
         {{else}}
-          Toast({
+        Toast({
           message: 'Hello Vue',
           iconClass: 'icon icon-success'
         });

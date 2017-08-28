@@ -1,0 +1,11 @@
+{
+  "name": "vue-webpack-template",
+  "version": "2.0.0",
+  "license": "MIT",
+  "description": "Quick start with Vue2 and ElementUI/MintUI.",
+  "author": "JacksonTxl<172004133@qq.com>",
+  "scripts": {},
+  "devDependencies": {
+    "vue-cli": "^2.8.2"
+  }
+}
