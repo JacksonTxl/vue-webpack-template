@@ -1,25 +1,27 @@
-# web-inner
+# vue-webpack-template
 
-document:
+
+> Quick start with Vue2 and ElementUI/MintUI
+
+## Features
+* Vue2 + vue-router(history mode / hash mode)
+* Vue2 UI Framework - [ElementUI](https://github.com/ElemeFE/element) / [MintUI](https://github.com/ElemeFE/mint-ui)
+* Postcss with postcss-salad
+* ESLint - [Standard](https://github.com/feross/standard)(optional)
+* Unit tests with Karma + Mocha(optional)
+* Publish script(optional)
+
+## Get Started
 
 ```bash
-powerset //权限设置页面
-changepassword //权限设置页面
-bindphone //权限设置页面
-```
-
-To develop:
-
-```bash
+$ vue init jikkai/vue-webpack-template project-develop
+$ cd project-develop
+$ npm i
 
 $ npm run dev
-```
 
-
-
-To build for production:
-
-```bash
 $ npm run build
 ```
-这是测试
+
+## License
+[MIT](https://github.com/JacksonTxl/vue-webpack-template/blob/master/LICENSE)
