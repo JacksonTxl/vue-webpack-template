@@ -11,6 +11,7 @@
   import { Button, Message } from 'element-ui';
   {{else}}
   import { Button, Toast } from 'mint-ui';
+  {{/if_eq}}
   export default {
     components: {
       Hello,
@@ -18,14 +19,14 @@
     },
     methods: {
       hello () {
-//        {{#if_eq theme 'element-ui'}}
-//        Message('Hello Vue')
-//        {{else}}
-//        Toast({
-//          message: 'Hello Vue',
-//          iconClass: 'icon icon-success'
-//        })
-//        {{/if_eq}}
+        {{#if_eq theme 'element-ui'}}
+        Message('Hello Vue')
+        {{else}}
+        Toast({
+          message: 'Hello Vue',
+          iconClass: 'icon icon-success'
+        })
+        {{/if_eq}}
           console.log(111);
       }
     }
