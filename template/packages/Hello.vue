@@ -9,7 +9,7 @@
     data () {
       return {
         message: 'Hello World'
-      }
+      };
     }
-  }
+  };
 </script>
