@@ -9,7 +9,7 @@ const config = require('../config/config')
 
 base.entry.vendor = config.vendor
 base.output.filename = 'js/[name].[chunkhash:8].js'
-base.output.publicPath = '../'
+base.output.publicPath = './'
 base.stats = { children: false }
 
 // Plugins Configuration
@@ -41,7 +41,7 @@ base.module.rules.push({
   test: /\.vue$/,
   loader: 'vue-loader',
   options: {
-    extractCSS: true,
+    extractCSS: false,
     preserveWhitespace: false
   }
 })
@@ -50,7 +50,16 @@ base.module.rules.push({
   test: /\.css$/,
   loader: ExtractTextPlugin.extract({
     use: [{ loader: 'css-loader' }, 'postcss-loader'],
-    fallback: 'style-loader'
+    fallback: 'style-loader',
+    publicPath: "../"
+  })
+})
+base.module.rules.push({
+  test: /\.scss$/,
+  loader: ExtractTextPlugin.extract({
+    use: [{ loader: 'css-loader' },{ loader: 'sass-loader' }, 'postcss-loader'],
+    fallback: 'style-loader',
+    publicPath: "../"
   })
 })
 
