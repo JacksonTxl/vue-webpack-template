@@ -1,5 +1,3 @@
-'use strict'
-
 const webpack = require('webpack')
 
 const base = require('./webpack.base')
@@ -16,20 +14,5 @@ base.plugins.push(
   new webpack.HotModuleReplacementPlugin(),
   new webpack.NoEmitOnErrorsPlugin()
 )
-
-// Rules Configuration
-base.module.rules.push({
-  test: /\.vue$/,
-  use: 'vue-loader'
-})
-
-base.module.rules.push({
-  test: /\.css$/,
-  use: [
-    'style-loader',
-    { loader: 'css-loader', options: { importLoaders: 1 } },
-    'postcss-loader'
-  ]
-})
 
 module.exports = base
