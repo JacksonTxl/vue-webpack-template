@@ -11,7 +11,7 @@
 * Unit tests with Karma + Mocha(optional)
 * Publish script(optional)
 
-## Get Start
+## Get Started
 
 ```bash
 $ vue init JacksonTxl/vue-webpack-template project-develop
