@@ -1,7 +1,7 @@
 {
-  "name": "web-inner",
-  "version": "",
-  "description": "",
+  "name": "{{name}}",
+  "version": "{{version}}",
+  "description": "{{description}}",
   "main": "src/index.js",
   "scripts": {
     "prebuild": "rimraf ./dist",
